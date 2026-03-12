@@ -30,4 +30,5 @@ export interface Resume {
   portfolio: string;
   timeline: { year: string; detail: string }[];
   performanceHighlights: string[];
+  profileImage: string;
 }

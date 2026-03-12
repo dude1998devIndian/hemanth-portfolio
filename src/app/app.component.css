@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page-nav {
   max-width: 1100px;
   margin: 0 auto 1.5rem;
@@ -43,6 +47,25 @@
   color: #fff;
 }
 
+.page-nav a:focus-visible {
+  animation: navPulse 0.6s ease forwards;
+}
+
+@keyframes navPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
 .app-shell {
   max-width: 1100px;
   margin: 0 auto;
@@ -65,6 +88,13 @@ section {
   box-shadow: 0 20px 40px rgba(3, 4, 11, 0.6);
   backdrop-filter: blur(12px);
   animation: fadeIn 0.7s ease both;
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+section:target {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 30px 60px rgba(255, 255, 255, 0.15);
 }
 
 .app-shell > * {

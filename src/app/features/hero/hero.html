@@ -6,22 +6,29 @@
     [phone]="resume.phone"
     [email]="resume.email"
   ></app-navbar>
-  <p class="tag-line">
-    Enterprise-grade frontend engineer obsessed with polished UI, resilient architecture, and
-    measurable performance wins.
-  </p>
-  <div class="hero-cta" *ngIf="resume.highlights.length">
-    <span *ngFor="let highlight of resume.highlights">
-      {{ highlight }}
-    </span>
-  </div>
-  <div class="hero-actions">
-    <a
-      class="download-resume"
-      href="/assets/RESUME_Hemanth_Kumar_p.pdf"
-      download
-    >
-      Download Resume
-    </a>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <p class="tag-line">
+        Enterprise-grade frontend engineer obsessed with polished UI, resilient architecture, and
+        measurable performance wins.
+      </p>
+      <div class="hero-cta" *ngIf="resume.highlights.length">
+        <span *ngFor="let highlight of resume.highlights">
+          {{ highlight }}
+        </span>
+      </div>
+      <div class="hero-actions">
+        <a
+          class="download-resume"
+          href="/assets/RESUME_Hemanth_Kumar_p.pdf"
+          download
+        >
+          Download Resume
+        </a>
+      </div>
+    </div>
+    <figure class="hero-portrait">
+      <img [src]="resume.profileImage" [alt]="resume.name" loading="lazy" />
+    </figure>
   </div>
 </section>
