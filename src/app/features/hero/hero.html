@@ -1,0 +1,18 @@
+﻿<section class="hero">
+  <app-navbar
+    [name]="resume.name"
+    [title]="resume.title"
+    [location]="resume.location"
+    [phone]="resume.phone"
+    [email]="resume.email"
+  ></app-navbar>
+  <p class="tag-line">
+    Enterprise-grade frontend engineer obsessed with polished UI, resilient architecture, and
+    measurable performance wins.
+  </p>
+  <div class="hero-cta" *ngIf="resume.highlights.length">
+    <span *ngFor="let highlight of resume.highlights">
+      {{ highlight }}
+    </span>
+  </div>
+</section>

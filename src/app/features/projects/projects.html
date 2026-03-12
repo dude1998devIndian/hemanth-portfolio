@@ -1,0 +1,17 @@
+﻿<section>
+  <app-section-title title="Projects" subtitle="Select program highlights"></app-section-title>
+  <div class="projects-grid">
+    <article *ngFor="let project of projects" class="project-card">
+      <div class="project-top">
+        <div>
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.summary }}</p>
+        </div>
+        <span class="project-year">{{ project.year }}</span>
+      </div>
+      <div class="project-tech">
+        {{ project.technologies.join(' · ') }}
+      </div>
+    </article>
+  </div>
+</section>

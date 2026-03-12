@@ -1,0 +1,20 @@
+<section>
+  <app-section-title
+    title="Experience"
+    subtitle="Delivery on complex programs"
+  ></app-section-title>
+
+  <article *ngFor="let exp of experience" class="experience-card">
+    <div class="experience-header">
+      <div>
+        <h3>{{ exp.project }}</h3>
+        <p>{{ exp.role }}</p>
+      </div>
+    </div>
+    <ul>
+      <li *ngFor="let item of exp.description">
+        {{ item }}
+      </li>
+    </ul>
+  </article>
+</section>

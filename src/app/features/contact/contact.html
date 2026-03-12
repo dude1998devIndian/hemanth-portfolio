@@ -1,0 +1,13 @@
+﻿<section>
+  <app-section-title title="Reach out" subtitle="Let's build something memorable"></app-section-title>
+  <div class="contact-card">
+    <span><strong>Location:</strong> {{ resume.location }}</span>
+    <span><strong>Phone:</strong> {{ resume.phone }}</span>
+    <span><strong>Email:</strong> {{ resume.email }}</span>
+    <span>
+      <strong>LinkedIn:</strong>
+      <a href="{{ resume.linkedIn }}" target="_blank" rel="noreferrer noopener">{{ resume.linkedIn }}</a>
+    </span>
+    <span><strong>Languages:</strong> {{ resume.languages.join(', ') }}</span>
+  </div>
+</section>

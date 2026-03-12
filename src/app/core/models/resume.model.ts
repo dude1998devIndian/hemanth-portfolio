@@ -4,6 +4,13 @@ export interface Experience {
   description: string[];
 }
 
+export interface Project {
+  name: string;
+  summary: string;
+  year: string;
+  technologies: string[];
+}
+
 export interface Resume {
   name: string;
   title: string;
@@ -13,6 +20,10 @@ export interface Resume {
   summary: string[];
   skills: string[];
   experience: Experience[];
+  projects: Project[];
   achievements: string[];
   education: string;
+  linkedIn: string;
+  languages: string[];
+  highlights: string[];
 }

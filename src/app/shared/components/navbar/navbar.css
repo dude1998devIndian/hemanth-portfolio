@@ -1,0 +1,32 @@
+﻿.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.navbar__titles h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+}
+
+.navbar__titles h3 {
+  margin: 0.35rem 0 0;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar__titles p {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar__contact {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+}

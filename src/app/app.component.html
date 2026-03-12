@@ -1,0 +1,11 @@
+﻿<main class="app-shell">
+  <app-hero [resume]="resume"></app-hero>
+  <app-about [summary]="resume.summary"></app-about>
+  <div class="content-split">
+    <app-skills [skills]="resume.skills"></app-skills>
+    <app-experience [experience]="resume.experience"></app-experience>
+  </div>
+  <app-projects [projects]="resume.projects"></app-projects>
+  <app-achievements [achievements]="resume.achievements"></app-achievements>
+  <app-contact [resume]="resume"></app-contact>
+</main>

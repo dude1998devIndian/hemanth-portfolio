@@ -1,0 +1,48 @@
+﻿.hero {
+  border-radius: 32px;
+  background: linear-gradient(135deg, rgba(86, 91, 255, 0.35), rgba(255, 110, 136, 0.35));
+  padding: 3rem 2.5rem;
+  box-shadow: 0 25px 60px rgba(3, 4, 11, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: -40% auto auto 60%;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent 70%);
+  opacity: 0.3;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-cta {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-cta span {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.9rem;
+  backdrop-filter: blur(8px);
+}
+
+.tag-line {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 0.6rem;
+  max-width: 520px;
+}

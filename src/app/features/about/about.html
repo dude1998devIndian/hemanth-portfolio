@@ -1,0 +1,11 @@
+﻿<section>
+  <app-section-title
+    title="Professional Summary"
+    subtitle="Strategic impact, clean UI, scalable systems"
+  ></app-section-title>
+  <div class="summary-grid">
+    <app-card *ngFor="let item of summary">
+      <p>{{ item }}</p>
+    </app-card>
+  </div>
+</section>
