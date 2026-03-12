@@ -26,4 +26,8 @@ export interface Resume {
   linkedIn: string;
   languages: string[];
   highlights: string[];
+  github: string;
+  portfolio: string;
+  timeline: { year: string; detail: string }[];
+  performanceHighlights: string[];
 }

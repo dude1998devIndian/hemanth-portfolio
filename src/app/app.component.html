@@ -1,11 +1,21 @@
-﻿<main class="app-shell">
-  <app-hero [resume]="resume"></app-hero>
-  <app-about [summary]="resume.summary"></app-about>
+﻿<nav class="page-nav">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+<main class="app-shell">
+  <app-hero id="home" [resume]="resume"></app-hero>
+  <app-about id="about" [summary]="resume.summary"></app-about>
   <div class="content-split">
-    <app-skills [skills]="resume.skills"></app-skills>
-    <app-experience [experience]="resume.experience"></app-experience>
+    <app-skills id="skills" [skills]="resume.skills"></app-skills>
+    <app-experience id="experience" [experience]="resume.experience"></app-experience>
   </div>
-  <app-projects [projects]="resume.projects"></app-projects>
-  <app-achievements [achievements]="resume.achievements"></app-achievements>
-  <app-contact [resume]="resume"></app-contact>
+  <app-timeline id="experience-timeline" [timeline]="resume.timeline"></app-timeline>
+  <app-projects id="projects" [projects]="resume.projects"></app-projects>
+  <app-performance id="performance" [highlights]="resume.performanceHighlights"></app-performance>
+  <app-achievements id="achievements" [achievements]="resume.achievements"></app-achievements>
+  <app-contact id="contact" [resume]="resume"></app-contact>
 </main>

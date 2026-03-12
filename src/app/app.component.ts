@@ -8,6 +8,8 @@ import { ExperienceComponent } from './features/experience/experience';
 import { ProjectsComponent } from './features/projects/projects';
 import { AchievementsComponent } from './features/achievements/achievements';
 import { ContactComponent } from './features/contact/contact';
+import { TimelineComponent } from './features/timeline/timeline';
+import { PerformanceComponent } from './features/performance/performance';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +21,9 @@ import { ContactComponent } from './features/contact/contact';
     ExperienceComponent,
     ProjectsComponent,
     AchievementsComponent,
-    ContactComponent
+    ContactComponent,
+    TimelineComponent,
+    PerformanceComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

@@ -13,6 +13,8 @@ export class ResumeService {
       email: 'hemanthkumar.p97@gmail.com',
       linkedIn: 'https://www.linkedin.com/in/hemanth-kumar-pothireddypalli-v-nv',
       languages: ['English', 'Telugu', 'Hindi'],
+      github: 'https://github.com/hemanthkumar',
+      portfolio: 'https://hemanth-portfolio.com',
 
       summary: [
         'Senior Frontend Engineer with 6+ years of experience building scalable Single Page Applications using Angular (2-18), TypeScript, and modern frontend architecture.',
@@ -102,6 +104,19 @@ export class ResumeService {
             'Delivered enterprise telecom dashboards with a focus on instrumentation, performance budgets, and automated Jasmine/Karma coverage.',
           technologies: ['Angular 15', 'NgRx', 'Jasmine/Karma']
         }
+      ],
+
+      timeline: [
+        { year: '2019', detail: 'Joined Virtusa Consulting Services as a frontend engineer' },
+        { year: '2020', detail: 'Led NGA Fibernet enterprise broadband modernization' },
+        { year: '2022', detail: 'Recognized as Star Performer after zero-defect releases' },
+        { year: '2023', detail: 'Delivered high-impact enterprise UI teams for telecom clients' }
+      ],
+
+      performanceHighlights: [
+        'Reduced load time by 40% with Angular Signals and bundle optimization',
+        'Implemented lazy loading patterns for every feature module',
+        'Optimized RxJS state flows with NgRx selectors and memoized effects'
       ],
 
       education:

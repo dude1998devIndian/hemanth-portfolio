@@ -1,0 +1,12 @@
+﻿.performance-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.performance-list li {
+  list-style: disc;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+}

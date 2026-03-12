@@ -1,0 +1,9 @@
+﻿<section>
+  <app-section-title title="Experience Timeline" subtitle="Career milestones"></app-section-title>
+  <div class="timeline">
+    <div *ngFor="let entry of timeline" class="timeline-item">
+      <span class="timeline-year">{{ entry.year }}</span>
+      <p>{{ entry.detail }}</p>
+    </div>
+  </div>
+</section>
