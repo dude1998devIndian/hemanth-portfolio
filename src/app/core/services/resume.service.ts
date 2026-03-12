@@ -15,8 +15,8 @@ export class ResumeService {
       languages: ['English', 'Telugu', 'Hindi'],
       github: 'https://github.com/hemanthkumar',
       portfolio: 'https://hemanth-portfolio.com',
-      profileImage: './assets/Hemanth Image.jpeg',
-// C:\Users\mrpot\test\profilebuild\hemanth-portfolio\public\assets\Hemanth Image.jpeg
+      profileImage: './assets/Hemanth_Image.jpeg',
+
       summary: [
         'Senior Frontend Engineer with 6+ years of experience building scalable Single Page Applications using Angular (2-18), TypeScript, and modern frontend architecture.',
         'Strong experience in AngularJS to Angular migration, reusable component architecture, RxJS and NgRx state management, and performance optimization.',
